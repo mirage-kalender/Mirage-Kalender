@@ -5193,5 +5193,21 @@ setInterval(()=>{if(!user||!approved||activeBan(ban)||app.style.display==='none'
 @media(max-width:760px){#mirageSidebar.mobile-closed nav button{font-size:0;justify-content:center;gap:0;padding:7px;min-height:50px}#mirageSidebar.mobile-closed nav button span{display:none}#mirageSidebar:not(.mobile-closed) nav button{font-size:13px;justify-content:flex-start;gap:10px}#mirageSidebar:not(.mobile-closed) nav button span{display:block}}
 @media(prefers-reduced-motion:reduce){#mirageSidebar nav button{transition:none}}
 </style>
+<style id="mirageGlassComplete">
+/* Visual layer only: no layout, permissions or event logic changes. */
+:root{--glass-surface:linear-gradient(155deg,#8bd6ff18,transparent 37%),linear-gradient(132deg,transparent 85%,#37bfff16 85%,#37bfff08 92%,transparent 92%),linear-gradient(115deg,#123854b8,#061625e8 58%,#0b2940c9);--glass-edge:#55b5e17d;--glass-shadow:inset 0 1px 2px #c4edff46,inset 0 -2px 12px #008cca24,0 4px 18px #0004;}
+#calendarApp .panel,#calendarApp .toolbar,#calendarApp .frame,#calendarApp #mirageStats>div,#calendarApp #mirageWelcome,#calendarApp #mirageRightRail #mirageUpcomingPanel,#calendarApp #mirageRightRail #mirageReminderPanel,#calendarApp #mirageWorkDetails .mirage-detail-card,#calendarApp #mirageBellPanel,.modal{background:var(--glass-surface);border-color:var(--glass-edge);box-shadow:var(--glass-shadow);backdrop-filter:blur(14px) saturate(125%);}
+#calendarApp .mirage-upcoming-item,#calendarApp .mirage-reminder-item,#calendarApp #mirageRightRail .mirage-upcoming-item,#calendarApp #mirageRightRail .mirage-reminder-item,#calendarApp #mirageWorkDetails .mirage-info-card h3,#calendarApp #teamList>div,#calendarApp #mirageBellList button,#calendarApp #mirageNotifyList>div{background:linear-gradient(150deg,#a0ddff20,transparent 48%),linear-gradient(132deg,transparent 83%,#36bdff19 83%,transparent 94%),linear-gradient(110deg,#123d59b0,#071a2bdd);border-color:#56b9e56e;box-shadow:inset 0 1px 2px #c5efff35,inset 0 -2px 9px #008cbb26,0 3px 8px #0003;}
+#calendarApp #mirageStats b{color:#b5f4ff;text-shadow:0 0 12px #00baff88}
+#calendarApp .dayhead{background:linear-gradient(155deg,#81d5ff19,transparent 48%),linear-gradient(110deg,#102b42,#091b2c);box-shadow:inset 0 1px 1px #a9e8ff26}
+#calendarApp .dayhead.today{background:linear-gradient(155deg,#9cecff55,transparent 43%),linear-gradient(110deg,#0b97cf,#07518a);box-shadow:inset 0 0 12px #45dfff66,0 0 8px #00baff44}
+#calendarApp .event{background:linear-gradient(155deg,#ffffff36,transparent 48%),var(--event-bg);box-shadow:inset 0 1px 2px #ffffff44,0 0 7px #008cff35}
+#calendarApp button:not(.danger):not([data-response]):not(.event):not(.mirage-rsvp-open):not(#mirageSidebar button){background-image:linear-gradient(155deg,#a2e0ff29,transparent 48%);box-shadow:inset 0 1px 2px #b9eaff30,0 2px 7px #0003}
+#calendarApp button.primary:not(#mirageSidebar button){background-image:linear-gradient(155deg,#aff1ff44,transparent 48%),linear-gradient(110deg,#087db6,#073a65);border-color:#42d7ff;box-shadow:inset 0 1px 2px #d5faff55,0 0 9px #00baff38}
+#calendarApp #mirageWorkDetails .mirage-detail-own button,#calendarApp #mirageWorkDetails .mirage-detail-card>button{background-image:linear-gradient(155deg,#ffffff24,transparent 48%);box-shadow:inset 0 1px 2px #ffffff25,0 2px 6px #0003}
+#calendarApp #mirageWorkDetails .mirage-detail-own button.selected{box-shadow:inset 0 0 12px currentColor;outline:1px solid currentColor}
+#calendarApp input:not([type=checkbox]):not([type=radio]),#calendarApp select,#calendarApp textarea,.modal input:not([type=checkbox]):not([type=radio]),.modal select,.modal textarea{background-image:linear-gradient(155deg,#84cfff0e,transparent 55%);border-color:#4c8fb66b;box-shadow:inset 0 1px 4px #0004}
+#calendarApp button:focus-visible,.modal button:focus-visible{outline:2px solid #a7edff;outline-offset:2px}
+</style>
 </body>
 </html>
