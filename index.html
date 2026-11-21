@@ -5173,5 +5173,25 @@ setInterval(()=>{if(!user||!approved||activeBan(ban)||app.style.display==='none'
 #calendarApp.mirage-dashboard #mirageRightRail .mirage-upcoming-title{font-size:15px}
 #calendarApp.mirage-dashboard #mirageRightRail #mirageReminderStatus{font-size:13px}
 </style>
+<style id="mirageGlassNavigation">
+#mirageSidebar{box-sizing:border-box;background:linear-gradient(145deg,rgba(24,78,117,.48),rgba(4,17,30,.92) 45%,rgba(10,47,75,.72)),linear-gradient(132deg,transparent 74%,#1689ba22 74%,#1689ba22 77%,transparent 77%);backdrop-filter:blur(22px) saturate(135%);border-right:1px solid #458fb780;box-shadow:inset -1px 0 0 #8edfff22,0 8px 30px #0005;gap:12px}
+#mirageSidebar nav{display:grid;gap:10px}
+#mirageSidebar nav button,#mirageSidebar nav button.primary{position:relative;box-sizing:border-box;align-items:center;justify-content:flex-start;gap:10px;min-height:54px;width:100%;padding:8px 9px;font-size:13px;font-weight:600;line-height:1.25;white-space:normal;text-align:left;color:#edf8ff;border:1px solid #4c9ac45c;border-radius:13px;background:linear-gradient(160deg,#8bd6ff24,transparent 46%),linear-gradient(132deg,transparent 82%,#35b9ff16 82%,#35b9ff16 89%,transparent 89%),linear-gradient(110deg,#163c5866,#071c30a6);box-shadow:inset 0 1px 1px #c4edff40,inset 0 -2px 12px #007dae1c,0 3px 8px #0003;transition:background .2s,border-color .2s,box-shadow .2s;}
+#mirageSidebar nav button:not([hidden]){display:flex}
+#mirageSidebar nav button[hidden]{display:none}
+#mirageSidebar nav button[style*="display: block"]{display:flex!important}
+#mirageSidebar nav button[style*="display: inline-block"]{display:flex!important}
+#mirageSidebar nav button svg{box-sizing:border-box;display:block;width:34px;height:34px;padding:7px;flex:0 0 34px;stroke:#92e9ff;background:linear-gradient(145deg,#78d5ff33,#0a345580 68%,#14aaff24);border:1px solid #6acfff50;border-radius:9px;box-shadow:inset 0 1px 2px #dcf8ff38,0 2px 5px #0004;filter:none;margin:0}
+#mirageSidebar nav button span{flex:1;min-width:0;text-align:left;font-size:inherit;overflow-wrap:normal}
+#mirageSidebar nav button:not([aria-current]):hover{background:linear-gradient(145deg,#6acfff38,#103650c9);border-color:#63caffaa;box-shadow:inset 0 1px 2px #c5f4ff55,0 0 12px #139bde33}
+#mirageSidebar nav button[aria-current="page"]{color:#fff;background:linear-gradient(155deg,#8ceaff55,transparent 42%),linear-gradient(130deg,transparent 79%,#42d9ff44 79%,#42d9ff44 86%,transparent 86%),linear-gradient(110deg,#087db6da,#063759d9);border-color:#53e5ff;box-shadow:inset 0 1px 3px #e4fcff88,inset 0 -2px 12px #00baff55,0 0 14px #00baff55}
+#mirageSidebar nav button[aria-current="page"] svg{stroke:#c6f8ff;border-color:#65e9ff99;box-shadow:inset 0 1px 2px #e0faff66,0 0 9px #00c8ff55}
+#mirageSidebar nav button:focus-visible,#mirageSidebar #mirageNavToggle:focus-visible{outline:2px solid #b5f2ff;outline-offset:2px}
+#mirageSidebar #mirageNavToggle,#mirageSidebar #logoutBtn{border-radius:11px;border:1px solid #4c9ac460;background:linear-gradient(155deg,#8bd6ff24,#0b263cb0);box-shadow:inset 0 1px 1px #c4edff33;color:#e7f7ff}
+#calendarApp.nav-small #mirageSidebar nav button{font-size:0;justify-content:center;gap:0;padding:7px;min-height:50px}
+#calendarApp.nav-small #mirageSidebar nav button span{display:none}
+@media(max-width:760px){#mirageSidebar.mobile-closed nav button{font-size:0;justify-content:center;gap:0;padding:7px;min-height:50px}#mirageSidebar.mobile-closed nav button span{display:none}#mirageSidebar:not(.mobile-closed) nav button{font-size:13px;justify-content:flex-start;gap:10px}#mirageSidebar:not(.mobile-closed) nav button span{display:block}}
+@media(prefers-reduced-motion:reduce){#mirageSidebar nav button{transition:none}}
+</style>
 </body>
 </html>
